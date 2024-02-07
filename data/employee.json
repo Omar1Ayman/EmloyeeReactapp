@@ -1,0 +1,88 @@
+{
+  "employees": [
+    {
+      "id": "2",
+      "name": "20th Floor",
+      "salaryStatus": 1,
+      "dateHiring": "4/18/2023",
+      "job": "Suite 40"
+    },
+    {
+      "id": "3",
+      "name": "Apt 1713",
+      "salaryStatus": 0,
+      "dateHiring": "8/2/2023",
+      "job": "Suite 96"
+    },
+    {
+      "id": "5",
+      "name": "Apt 864",
+      "salaryStatus": 1,
+      "dateHiring": "7/2/2023",
+      "job": "Room 1698"
+    },
+    {
+      "id": "7",
+      "name": "Apt 1511",
+      "salaryStatus": 0,
+      "dateHiring": "4/12/2023",
+      "job": "Room 102"
+    },
+    {
+      "id": "8",
+      "name": "PO Box 87590",
+      "salaryStatus": 0,
+      "dateHiring": "10/9/2023",
+      "job": "PO Box 72960"
+    },
+    {
+      "id": "9",
+      "name": "PO Box 24179",
+      "salaryStatus": 0,
+      "dateHiring": "10/13/2023",
+      "job": "PO Box 65108"
+    },
+    {
+      "id": "10",
+      "name": "9th Floor",
+      "salaryStatus": 1,
+      "dateHiring": "8/15/2023",
+      "job": "Room 1347"
+    },
+    {
+      "id": "11",
+      "name": "Room 937",
+      "salaryStatus": 1,
+      "dateHiring": "3/25/2023",
+      "job": "Room 671"
+    },
+    {
+      "id": "12",
+      "name": "11th Floor",
+      "salaryStatus": 1,
+      "dateHiring": "2/25/2023",
+      "job": "PO Box 50474"
+    },
+    {
+      "id": "15",
+      "name": "10th Floor",
+      "salaryStatus": 1,
+      "dateHiring": "9/3/2023",
+      "job": "Apt 58"
+    },
+    {
+      "id": "17",
+      "name": "Apt 54",
+      "salaryStatus": 1,
+      "dateHiring": "10/24/2023",
+      "job": "3rd Floor"
+    },
+    {
+      "id": "19",
+      "name": "Room 1627",
+      "salaryStatus": 1,
+      "dateHiring": "3/27/2023",
+      "job": "Apt 62"
+    }
+  ]
+}

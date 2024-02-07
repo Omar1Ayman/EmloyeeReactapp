@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.app {
+  display: grid;
+  grid-template-columns: minmax(3rem, 18rem) 1fr; /* Sidebar takes minimum 200px and expands to fill available space, header takes auto size */
+  grid-template-rows: auto 1fr; /* Header takes auto size, main content takes 1 fraction of available space */
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  min-height: 100vh;
+}
+main {
+  grid-area: main;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  all: unset;
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: minmax(10rem, 11rem) 1fr;
+    .container {
+      width: 98%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    grid-template-columns: minmax(3rem, 3rem) 1fr;
+    .container {
+      width: 100%;
+      padding: 0.2rem;
+    }
+  }
+}

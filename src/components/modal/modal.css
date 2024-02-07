@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #0009;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s;
+  .wrapper {
+    width: 50%;
+    background: #fff;
+    margin: 5rem auto;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-weight: bold;
+        text-transform: capitalize;
+        color: #333;
+      }
+      .close {
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+        color: #333;
+        &:hover {
+          opacity: 0.8;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
