@@ -30,6 +30,21 @@ const getEmployeesByName = async (query) => {
   }
 };
 
+const searchEmp = async (query) => {
+  const { name, id } = query;
+  try {
+    const res = await fetch(`${api}?name=${name}&id=${id}`);
+    if (!res.ok) {
+      throw new Error("Failed to fetch employees");
+    }
+    const data = await res.json();
+    return data; // Return only the employees array from the response
+  } catch (error) {
+    console.error("Error fetching employees:", error);
+    throw error;
+  }
+};
+
 const createEmployee = async (data) => {
   try {
     const res = await fetch(api, {
@@ -89,4 +104,5 @@ export {
   createEmployee,
   updateEmployee,
   deleteEmployee,
+  searchEmp,
 };

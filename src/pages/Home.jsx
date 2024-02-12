@@ -1,20 +1,17 @@
 import { useEffect, useState } from "react";
 import "./home.css";
 import { getEmployees } from "../services/apiEmployee";
-const Home = () => {
-  const [countEmps, setCountEmps] = useState(0);
-  useEffect(() => {
-    const fetchEmployees = async () => {
-      try {
-        const emps = await getEmployees();
-        setCountEmps(emps.length);
-      } catch (error) {
-        console.error("Error fetching employees:", error);
-      }
-    };
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUsers, getUsers } from "../fetaures/UserSlice";
 
-    fetchEmployees();
+const Home = () => {
+  const users = useSelector((state) => state.users.data);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchUsers());
   }, []);
+  console.log(users?.length);
   return (
     <div className="home">
       <div className="container">
@@ -24,7 +21,7 @@ const Home = () => {
             return (
               <div key={item} className="card">
                 <i class="icon fa-solid fa-users"></i>
-                <h3>{countEmps}</h3>
+                <h3>{users?.length}</h3>
                 <h3>Employess</h3>
               </div>
             );
